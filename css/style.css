@@ -685,7 +685,7 @@
 .button-cost {
     width: 200px;
     background-color: var(--basic-pink);
-    margin-bottom: 42px;
+    margin-bottom: 40px;
 }
 .button-cost:hover {
     background-color: var(--light-pink);
@@ -985,8 +985,7 @@
 }
 .range-controls .toggle-min {
     left: 18px;
-}
-  
+}  
 .range-controls .toggle-max {
     left: 160px;
 }
