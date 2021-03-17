@@ -16,7 +16,7 @@
   <link rel="manifest" href="site.webmanifest">
 </head>
 
-<body class="page-body">
+<body class="page-body container-page">
 
   <header class="main-header">
     <!--Шапка страницы-->
@@ -42,10 +42,12 @@
   </header>
 
   <main class="main-container">
-    <div class="container">
-      <div class="title-shop">
+    <div class="title-shop">
+      <div class="container">
         <h1>Магазин готовых шаблонов</h1>
       </div>
+    </div>
+    <div class="container">
       <div class="grid-container">
         <section class="main-filter">
           <h2 class="invis">Фильтр сайтов</h2>
@@ -151,13 +153,13 @@
                 <h3 class="invis">Sedona</h3>
                 <img src="img/shop_item_sedona.jpg" width="359" height="578" alt="Превью шаблона Sedona">
                 <div class="template-decoration">
-                  <a href="#">
+                  <a class="template-path" href="#">
                     <p class="template-name-text">SEDONA</p>
                   </a>
                   <p class="template-about-text">Информационный сайт<br>
                     для туристов
                   </p>
-                  <button class="button button-cost" type="button">9 900 ₽ </button>
+                  <a href="#" class="button button-cost">9 900 ₽</a>
                 </div>
                 <div class="item-points">
                   <svg>
@@ -175,13 +177,13 @@
                 <h3 class="invis">PINK APP</h3>
                 <img src="img/shop_item_pink.jpg" width="359" height="578" alt="Превью шаблона PINK APP">
                 <div class="template-decoration">
-                  <a href="#">
+                  <a class="template-path" href="#">
                     <p class="template-name-text">PINK APP</p>
                   </a>
                   <p class="template-about-text">Продуктовый лендинг<br>
                     приложения для iOS и Android
                   </p>
-                  <button class="button button-cost" type="button">9 900 ₽ </button>
+                  <a href="#" class="button button-cost">9 900 ₽</a>
                 </div>
                 <div class="item-points">
                   <svg>
@@ -200,13 +202,13 @@
                 <img src="img/shop_item_borodinsky.jpg" width="359" height="578"
                   alt="Превью шаблона Бородинский Барбершоп">
                 <div class="template-decoration">
-                  <a href="#">
+                  <a class="template-path" href="#">
                     <p class="template-name-text">BARBERSHOP</p>
                   </a>
                   <p class="template-about-text">Сайт салона красоты<br>
                     для мужчин,да
                   </p>
-                  <button class="button button-cost" type="button">9 900 ₽ </button>
+                  <a href="#" class="button button-cost">9 900 ₽</a>
                 </div>
                 <div class="item-points">
                   <svg>
@@ -224,13 +226,13 @@
                 <h3 class="invis">Мишка</h3>
                 <img src="img/shop_item_mishka.jpg" width="359" height="578" alt="Превью шаблона Мишка">
                 <div class="template-decoration">
-                  <a href="#">
+                  <a class="template-path" href="#">
                     <p class="template-name-text">MiSHKA</p>
                   </a>
                   <p class="template-about-text">Интернет-магазин<br>
                     вязанных игрушек
                   </p>
-                  <button class="button button-cost" type="button">9 900 ₽ </button>
+                  <a href="#" class="button button-cost">9 900 ₽</a>
                 </div>
                 <div class="item-points">
                   <svg>
@@ -248,13 +250,13 @@
                 <h3 class="invis">А+</h3>
                 <img src="img/shop_item_aplus.jpg" width="359" height="578" alt="Превью шаблона А+">
                 <div class="template-decoration">
-                  <a href="#">
+                  <a class="template-path" href="#">
                     <p class="template-name-text">A PLUS</p>
                   </a>
                   <p class="template-about-text">Лендинг курсов повышения<br>
                     квалификация
                   </p>
-                  <button class="button button-cost" type="button">9 900 ₽ </button>
+                  <a href="#" class="button button-cost">9 900 ₽ </a>
                 </div>
                 <div class="item-points">
                   <svg>
@@ -272,13 +274,13 @@
                 <h3 class="invis">Квас</h3>
                 <img src="img/shop_item_kvast.jpg" width="359" height="578" alt="Превью шаблона Квас">
                 <div class="template-decoration">
-                  <a href="#">
+                  <a class="template-path" href="#">
                     <p class="template-name-text">КВАСТ</p>
                   </a>
                   <p class="template-about-text">Промо-сайт производителя<br>
                     крафтового кваса
                   </p>
-                  <button class="button button-cost" type="button">9 900 ₽ </button>
+                  <a href="#" class="button button-cost">9 900 ₽ </a>
                 </div>
                 <div class="item-points">
                   <svg>
@@ -292,7 +294,6 @@
                   </svg>
                 </div>
               </li>
-
             </ul>
             <ul class="template-switch">
               <li>
@@ -311,25 +312,25 @@
           </section>
         </div>
       </div>
-      <section class="contacts">
-        <div class="container">
-          <div class="contact-block">
-            <h2>NЁRDS DESIGN STUDIO</h2>
-            <p>
-              191186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная, д. 19/8
-            </p>
-            <p>
-              тел. <a class="contact-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
-            </p>
-            <button class="button button-text-us" type="button">Напишите нам</button>
-          </div>
-        </div>
-        <div class="map-marker">
-          <img src="img/map-marker_1.png" width="231" height="190" alt="Маркер-точка на карте">
-        </div>
-      </section>
     </div>
+
+    <section class="contacts container-map">
+      <div class="contact-block">
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p>
+          тел. <a class="contact-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
+        </p>
+        <a class="button button-text-us" href="#">Напишите нам</a>
+      </div>
+      </div>
+      <div class="map-marker">
+        <img src="img/map-marker_1.png" width="231" height="190" alt="Маркер-точка на карте">
+      </div>
+    </section>
   </main>
 
   <footer class="container">
@@ -341,17 +342,17 @@
         <ul class="social-button-list">
           <li>
             <a class="social-button-item" href="#">
-              <img src="img/icon_vk.svg" alt="значок ВК">
+              <img src="img/icon_vk.svg" alt="значок Вконтакте">
             </a>
           </li>
           <li>
             <a class="social-button-item" href="#">
-              <img src="img/icon_fb.svg" alt="значок ФБ">
+              <img src="img/icon_fb.svg" alt="значок Фейсбука">
             </a>
           </li>
           <li>
             <a class="social-button-item" href="#">
-              <img src="img/icon-insta.svg" width="21" height="21" alt="значок ИНСТ">
+              <img src="img/icon-insta.svg" width="21" height="21" alt="значок Инстаграмма">
             </a>
           </li>
         </ul>

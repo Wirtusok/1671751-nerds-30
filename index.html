@@ -43,14 +43,14 @@
 
   <main class="main-container">
     <!--Основной блок инф.-->
-    <div class="container">
-      <h1 class="invis">Интернет магазин Нёрдс</h1>
-      <section class="sliders">
+    <h1 class="invis">Интернет магазин Нёрдс</h1>
+    <section class="sliders">
+      <div class="container">
         <!--Блок с определениями и слайдером-->
         <h2 class="invis">Определения</h2>
         <ul class="slider-list">
           <li class="slider-item slide slide-current ">
-            <div>
+            <div class="slider-text-layer">
               <p class="slider-bold-big-text">
                 Долго, дорого,<br>
                 скрупулезно.
@@ -62,7 +62,7 @@
               <a class="button button-slider">Узнать больше</a>
             </div>
             <div>
-              <img src="img/nerds-index-slide1_1.png" width="760" height="431" alt="слайд1">
+              <img src="img/nerds-index-slide1_1.png" width="760" height="431" alt="слайд с тремя смартфонами">
             </div>
           </li>
           <li class="slider-item slide">
@@ -78,7 +78,7 @@
               <a class="button button-slider">Узнать больше</a>
             </div>
             <div class="slider-image-layer">
-              <img src="img/nerds-index-slide2_1.png" width="760" height="431" alt="слайд2">
+              <img src="img/nerds-index-slide2_1.png" width="760" height="431" alt="слайд с двумя мониторами">
             </div>
           </li>
           <li class="slider-item slide">
@@ -94,7 +94,7 @@
               <a class="button button-slider">Узнать больше</a>
             </div>
             <div>
-              <img src="img/nerds-index-slide3_1.png" width="760" height="431" alt="слайд3">
+              <img src="img/nerds-index-slide3_1.png" width="760" height="431" alt="слайд с планшетом и смартфоном">
             </div>
           </li>
         </ul>
@@ -103,8 +103,10 @@
           <button type="button" aria-label="Второй слайд"></button>
           <button type="button" aria-label="Третий слайд"></button>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <div class="container">
       <section class="offers">
         <!--Блок с предложениями-->
         <h2 class="invis">Предложения от интернет магазина Нёрдс</h2>
@@ -144,8 +146,8 @@
           <!--Блок с инф. чем занимается кампания и небольшое описание-->
           <h2 class="invis">Краткая информация</h2>
           <p class="about-big-bold-text">
-            <b>Мы — маленькая, но гордая<br>
-              дизайн-студия из Краснодара.</b>
+            Мы — маленькая, но гордая<br>
+            дизайн-студия из Краснодара.
           </p>
           <p class="about-small-text">
             Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
@@ -185,36 +187,37 @@
         <!--блок с лого партнеров?-->
         <h2 class="invis">Наши партнёры</h2>
         <ul class="partner-list">
-          <li class="partner-item1 partner"><a href="https://htmlacademy.ru/intensive/htmlcss"><img
-                src="img/logo-1_1.svg" width="199" height="68" alt="лого html-academy" class="opacity-offer"></a></li>
-          <li class="partner-item2 partner"><a href="#"><img src="img/logo-2_1.svg" width="209" height="90"
-                alt="лого БШ Бородинский" class="opacity-offer"></a></li>
-          <li class="partner-item3 partner"><a href="#"><img src="img/logo-3_1.svg" width="185" height="52"
-                alt="лого Пинк" class="opacity-offer"></a></li>
-          <li class="partner-item4 partner"><a href="#"><img src="img/logo-4_1.svg" width="173" height="84"
-                alt="лого Мишка" class="opacity-offer"></a></li>
+          <li class="partner-item1 partner"><a href="https://htmlacademy.ru/intensive/htmlcss"
+              class="opacity-offer"><img src="img/logo-1_1.svg" width="199" height="68" alt="лого html-academy"></a>
+          </li>
+          <li class="partner-item2 partner"><a href="#" class="opacity-offer"><img src="img/logo-2_1.svg" width="209"
+                height="90" alt="лого БШ Бородинский"></a></li>
+          <li class="partner-item3 partner"><a href="#" class="opacity-offer"><img src="img/logo-3_1.svg" width="185"
+                height="52" alt="лого Пинк"></a></li>
+          <li class="partner-item4 partner"><a href="#" class="opacity-offer"><img src="img/logo-4_1.svg" width="173"
+                height="84" alt="лого Мишка"></a></li>
         </ul>
       </section>
-
-      <section class="contacts">
-        <div class="container">
-          <div class="contact-block">
-            <h2>NЁRDS DESIGN STUDIO</h2>
-            <p>
-              191186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная, д. 19/8
-            </p>
-            <p>
-              тел. <a class="contact-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
-            </p>
-            <button class="button button-text-us" type="button">Напишите нам</button>
-          </div>
-        </div>
-        <div class="map-marker">
-          <img src="img/map-marker_1.png" width="231" height="190" alt="Маркер-точка на карте">
-        </div>
-      </section>
     </div>
+    <section class="contacts container-map">
+      <div>
+        <div class="contact-block">
+          <h2>NЁRDS DESIGN STUDIO</h2>
+          <p>
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p>
+            тел. <a class="contact-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
+          </p>
+          <a class="button button-text-us" href="#">Напишите нам</a>
+        </div>
+      </div>
+      <div class="map-marker">
+        <img src="img/map-marker_1.png" width="231" height="190" alt="Маркер-точка на карте">
+      </div>
+    </section>
+
   </main>
 
   <footer class="container">
@@ -226,17 +229,17 @@
         <ul class="social-button-list">
           <li>
             <a class="social-button-item" href="#">
-              <img src="img/icon_vk.svg" alt="значок ВК">
+              <img src="img/icon_vk.svg" alt="значок Вконтакте">
             </a>
           </li>
           <li>
             <a class="social-button-item" href="#">
-              <img src="img/icon_fb.svg" alt="значок ФБ">
+              <img src="img/icon_fb.svg" alt="значок Фейсбука">
             </a>
           </li>
           <li>
             <a class="social-button-item" href="#">
-              <img src="img/icon-insta.svg" width="21" height="21" alt="значок ИНСТ">
+              <img src="img/icon-insta.svg" width="21" height="21" alt="значок Инстаграмма">
             </a>
           </li>
         </ul>
