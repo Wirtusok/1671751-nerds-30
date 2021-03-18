@@ -244,33 +244,35 @@
       </section>
     </div>
   </footer>
-
-  <section class="container-modal invis">
-    <h2 class="modal-text-us">Напишите нам</h2>
-    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="small-modal-row">
-        <p class="modal-item">
-          <label class="modal-parameters" for="your-name">Ваше имя:</label>
-          <input class="modal-input" id="your-name" type="text" name="fio" placeholder="Имя Фамилия">
-        </p>
-        <p class="modal-item">
-          <label class="modal-parameters" for="your-email">Ваш email:</label>
-          <input class="modal-input" id="your-email" type="email" name="email" placeholder="email@example.com">
-        </p>
-      </div>
-      <div class="text-area-row">
-        <p class="modal-item">
-          <label class="modal-parameters" for="text-post">Текст письма:</label>
-          <textarea class="modal-input modal-text-area" name="text-post" id="text-post" rows="1"
-            placeholder="В свободной форме"></textarea>
-        </p>
-      </div>
-      <div>
-        <button class="button modal-button" type="submit">Отправить</button>
-      </div>
-    </form>
-    <button class="modal-close" type="button" aria-label="закрыть окно"></button>
-  </section>
+  
+  <div class="wrapper-modal invis">
+    <section class="container-modal">
+      <h2 class="modal-text-us">Напишите нам</h2>
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="small-modal-row">
+          <p class="modal-item">
+            <label class="modal-parameters" for="your-name">Ваше имя:</label>
+            <input class="modal-input" id="your-name" type="text" name="fio" placeholder="Имя Фамилия">
+          </p>
+          <p class="modal-item">
+            <label class="modal-parameters" for="your-email">Ваш email:</label>
+            <input class="modal-input" id="your-email" type="email" name="email" placeholder="email@example.com">
+          </p>
+        </div>
+        <div class="text-area-row">
+          <p class="modal-item">
+            <label class="modal-parameters" for="text-post">Текст письма:</label>
+            <textarea class="modal-input modal-text-area" name="text-post" id="text-post" rows="1"
+              placeholder="В свободной форме"></textarea>
+          </p>
+        </div>
+        <div>
+          <button class="button modal-button" type="submit">Отправить</button>
+        </div>
+      </form>
+      <button class="modal-close" type="button" aria-label="закрыть окно"></button>
+    </section>
+  </div>
 </body>
 
 </html>

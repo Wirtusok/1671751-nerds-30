@@ -1220,18 +1220,21 @@
     grid-row-start: 1;
     grid-row-end: 3;
     max-width: 760px;
-    padding-right: 140px;
 }
 
 /* изменения для проверки */
 
 /*Модальное Окно*/
 
+.wrapper-modal {
+    position: relative; 
+}
 .container-modal {
     position: absolute;
-    transform-origin: center;
-    left: 450px;
-    top: 1706px;
+    left: 50%;
+    top: 50%;
+    margin-left: -480px;
+    margin-top: -770px;
     max-width: 760px;
     max-height: 590px;
     background-color: #FFFFFF;
