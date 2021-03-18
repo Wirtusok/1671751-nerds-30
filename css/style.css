@@ -30,7 +30,7 @@
     --dark-yellow: #E5A722;
 }
 
-/*стиль документf*/
+/*стиль документ*/
 
 .page {
     height: 100%;
@@ -56,11 +56,7 @@
     padding-left: 20px;
     padding-right: 20px;
 }
-.container-map {
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 /*стиль невидимости семантических заголовков*/
 
 .invis {
@@ -189,7 +185,7 @@
 .sliders {
     background-color: var(--basic-grey);
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 79px;
 }
 .slider-list {
     list-style: none;
@@ -198,34 +194,60 @@
     margin: 0px;
     padding: 0;
 }
-.slider-text-layer {
-    max-width: 378px;
+.slider-item1 {
+    background-image: url(../img/nerds-index-slide1_1.png);
+    background-repeat: no-repeat;
+    background-position-x: 397px;
+    background-position-y: center;
+    min-height: 431px;
 }
-.slider-item {
-    display: grid;
-    grid-template-columns: max-content min-content;
-    grid-template-rows: 430px;
-    column-gap: 20px;
+.slider-item2 {
+    background-image: url(../img/nerds-index-slide2_1.png);
+    background-repeat: no-repeat;
+    background-position-x: 397px;
+    background-position-y: center;
+    min-height: 431px;
+}
+.slider-item3 {
+    background-image: url(../img/nerds-index-slide3_1.png);
+    background-repeat: no-repeat;
+    background-position-x: 397px;
+    background-position-y: center;
+    min-height: 431px;
 }
 .slider-bold-big-text {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
-    margin-top: 0;
+    margin-top: 78px;
     margin-bottom: 26px;
-    padding-top: 77px;
+}
+.slider-bold-big-text2,
+.slider-bold-big-text3 {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    margin-top: 78px;
+    margin-bottom: 37px;
 }
 .slider-bold-small-text {
     font-weight: 400;
     color: var(--another-black);
     margin-top: 0;
-    margin-bottom: 41px;
+    margin-bottom: 39px;
+}
+.slider-bold-small-text2,
+.slider-bold-small-text3 {
+    font-weight: 400;
+    color: var(--another-black);
+    margin-top: 0;
+    margin-bottom: 27px;
 }
 .slide {
     display: none;
 }
 .slide-current {
-    display: grid;
+    display: flex;
 }
 .slider-controls {
     position: absolute;
@@ -247,7 +269,7 @@
 }
 .slider-controls .current {
     background-image: url(../img/current-slider.svg);
-  }
+}
 
 /*Стиль блока предложений*/
 
@@ -289,7 +311,7 @@
 }
 .offers-item p {
     font-weight: 400;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
 }
 
 /*Стиль блока инф. о компании и чем она занимается*/
@@ -298,7 +320,7 @@
     position: relative;
     display: flex; 
     justify-content: space-between;
-    margin-bottom: 120px;
+    margin-bottom: 115px;
 }
 .about-stat-logo::after {
     content: "";
@@ -315,7 +337,7 @@
 .about-big-bold-text {
     margin-top: 0;
     margin-bottom: 34px;
-    padding-top: 34px;
+    padding-top: 35px;
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
@@ -330,7 +352,7 @@
     font-weight: 700; 
     text-transform: uppercase;
     font-size: 16px;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
     margin-top: 0;
 }
 .about-list {
@@ -367,7 +389,7 @@
 .stat-table caption {
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     padding-left: 3px;
 }
 .stat-data {
@@ -375,7 +397,7 @@
     line-height: 64px;
     font-weight: 700;
     padding: 0;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
     padding-right: 10px;
     
 }
@@ -401,7 +423,7 @@
     width: 1158px;
     height: 2px;
     left: 0;
-    top: 136px;
+    top: 138px;
     background-color: var(--basic-grey);
 }
 .partner {
@@ -432,14 +454,14 @@
 }
 .partner-item2 {
     padding-top: 2px;
-    padding-left: 2px;
+    padding-left: 5px;
 }
 .partner-item3 {
-    padding-left: 26px;
+    padding-left: 28px;
 }
 .partner-item4 {
     padding-left: 42px;
-    padding-top: 9px;
+    padding-top: 10px;
 }
 .partner-item2::before {
     content: "";
@@ -474,19 +496,17 @@
 .contacts {
     position: relative;
     justify-self: center;
-    background-image: url(../img/map_1.jpg);
-    background-position: 50% 50%;
-    background-size: cover;
     min-height: 417px;
     margin-bottom: 68px;
 }
 .contact-block {
+    position: absolute;
+    top: 0;
     display: inline-block;
     text-align: center;
     padding: 50px;
     padding-bottom: 47px;
     background-color: white;
-    margin-left: 140px;
     margin-top: 54px;
 }
 .map-marker {
@@ -694,7 +714,6 @@
     background-color: var(--basic-pink);
     margin-bottom: 40px;
     text-decoration: none;
-    
 }
 .button-cost:hover {
     background-color: var(--light-pink);
@@ -793,7 +812,7 @@
     padding-top: 1px;
 }
 
-  /*состояние для заблокированого лейбла*/
+/*состояние для заблокированого лейбла*/
 
 .filter-option-blocked label {
     position: relative;
@@ -812,7 +831,7 @@
     border: none;
     padding: 0;
     margin: 0;
-    margin-top: 55px;
+    margin-top: 53px;
 }
 .filter-input-radio + label::before {
     content: "";
@@ -1041,7 +1060,7 @@
     color:var(--another-black);
 }
 .sorting-item {
-    margin-right: 22px;
+    margin-right: 21px;
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
@@ -1097,6 +1116,11 @@
     max-width: 359px;
     max-height: 570px;
     margin-bottom: 70px;
+}
+.template-item img {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .template-item::before {
     content: "";
@@ -1181,7 +1205,7 @@
     grid-template-columns: min-content 1fr;
     grid-template-rows: min-content min-content;
     column-gap: 140px;
-    margin-bottom: 60px;
+    margin-bottom: 59px;
 }
 .main-filter {
     grid-column-start: 1;
@@ -1204,8 +1228,10 @@
 /*Модальное Окно*/
 
 .container-modal {
-    margin: auto;
-    position: relative;
+    position: absolute;
+    transform-origin: center;
+    left: 450px;
+    top: 1706px;
     max-width: 760px;
     max-height: 590px;
     background-color: #FFFFFF;
@@ -1213,7 +1239,6 @@
     padding: 63px 100px 80px; 
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
-
 .modal-item {
     width: 360px;
     margin-bottom: 30px;
